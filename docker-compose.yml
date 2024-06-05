@@ -24,6 +24,7 @@ services:
     image: nginx:1.25.3-alpine3.18
     ports:
       - "80:80"
+      - "443:443"
     depends_on:
       - app
     volumes:
