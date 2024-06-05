@@ -28,7 +28,7 @@ async def create_request(data: RequestForm):
             session.commit()
         except:
             raise HTTPException(status_code=422)
-        return r
+        return data
 
 
 if __name__ == '__main__':
